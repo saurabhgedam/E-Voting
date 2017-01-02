@@ -1,0 +1,289 @@
+<!-- start: sidebar -->
+				<aside id="sidebar-left" class="sidebar-left">
+				
+					<div class="sidebar-header">
+						<div class="sidebar-title">
+							Navigation
+						</div>
+						<div class="sidebar-toggle hidden-xs" data-toggle-class="sidebar-left-collapsed" data-target="html" data-fire-event="sidebar-left-toggle">
+							<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+						</div>
+					</div>
+				
+					<div class="nano">
+						<div class="nano-content">
+							<nav id="menu" class="nav-main" role="navigation">
+								<ul class="nav nav-main">
+									<?php if ($title == 'Dashboard') {?>
+									<li class="nav-active">
+										<a href="<?php echo site_url();?>site/dashboard">
+											<i class="fa fa-home" aria-hidden="true"></i>
+											<span>Dashboard</span>
+										</a>
+									</li>
+									<li class="nav-parent">
+										<a>
+											<i class="fa fa-user" aria-hidden="true"></i>
+											<span>User Management</span>
+										</a>
+										<ul class="nav nav-children">
+											<li>
+												<a href="<?php echo site_url();?>site/add_member">
+													 Add Member
+												</a>
+											</li>
+
+											<li>
+												<a href="<?php echo site_url();?>site/show_members">
+													 Show Members
+												</a>
+											</li>																						
+										</ul>
+									</li>
+									<li  class="nav-parent">
+										<a>
+											<!--<span class="pull-right label label-primary"><?php echo $no_of_branches;?></span>-->
+											<i class="fa fa-plus-square" aria-hidden="true"></i>
+											<span>Branch Management</span>
+										</a>
+										<ul class="nav nav-children">
+											<li>
+												<a href="<?php echo site_url();?>site/show_branches">
+													 Show Branches
+												</a>
+											</li>
+
+											<li>
+												<a href="<?php echo site_url();?>site/add_branch">
+													 Add Branch
+												</a>
+											</li>																						
+										</ul>
+									</li>
+									<li class="nav-parent">
+										<a>	
+											<i class="fa fa-calendar" aria-hidden="true"></i>
+											<span>Event Management</span>
+										</a>
+										<ul class="nav nav-children">
+											<li>
+												<a href="<?php echo site_url();?>site/add_event">
+													 Add Event
+												</a>
+											</li>
+
+											<li>
+												<a href="<?php echo site_url();?>site/show_events">
+													 Show Events
+												</a>
+											</li>																						
+										</ul>
+									</li>
+									<?php }?>
+									<?php if ($title == 'Add New Member' || $title == 'Update Member' || $title == 'Show Members') {?>
+									<li>
+										<a href="<?php echo site_url();?>site/dashboard">
+											<i class="fa fa-home" aria-hidden="true"></i>
+											<span>Dashboard</span>
+										</a>
+									</li>
+									<li  class="nav-parent nav-expanded nav-active">
+										<a>
+											<i class="fa fa-user" aria-hidden="true"></i>
+											<span>User Management</span>
+										</a>
+										<ul class="nav nav-children">
+											<li>
+												<a href="<?php echo site_url();?>site/add_member">
+													 Add Member
+												</a>
+											</li>
+
+											<li>
+												<a href="<?php echo site_url();?>site/show_members">
+													 Show Members
+												</a>
+											</li>																						
+										</ul>
+									</li>
+									<li  class="nav-parent">
+										<a>
+											<span class="pull-right label label-primary"><?php echo $no_of_branches;?></span>
+											<i class="fa fa-plus-square" aria-hidden="true"></i>
+											<span>Branch Management</span>
+										</a>
+										<ul class="nav nav-children">
+											<li>
+												<a href="<?php echo site_url();?>site/show_branches">
+													 Show Branches
+												</a>
+											</li>
+
+											<li>
+												<a href="<?php echo site_url();?>site/add_branch">
+													 Add Branch
+												</a>
+											</li>																						
+										</ul>
+									</li>
+									<li class="nav-parent">
+										<a>				<span class="pull-right label label-primary"><?php echo $no_of_events;?></span>
+											<i class="fa fa-calendar" aria-hidden="true"></i>
+											<span>Event Management</span>
+										</a>
+										<ul class="nav nav-children">
+											<li>
+												<a href="<?php echo site_url();?>site/add_event">
+													 Add Event
+												</a>
+											</li>
+
+											<li>
+												<a href="<?php echo site_url();?>site/show_events">
+													 Show Events
+												</a>
+											</li>																						
+										</ul>
+									</li>
+									<?php }?>									
+									<?php if ($title == 'Add Branch' || $title == 'Show Branches' || $title == 'Update Branch') {?>
+									<li>
+										<a href="<?php echo site_url();?>site/dashboard">
+											<i class="fa fa-home" aria-hidden="true"></i>
+											<span>Dashboard</span>
+										</a>
+									</li>
+									<li class="nav-parent">
+										<a>
+											<i class="fa fa-user" aria-hidden="true"></i>
+											<span>User Management</span>
+										</a>
+										<ul class="nav nav-children">
+											<li>
+												<a href="<?php echo site_url();?>site/add_member">
+													 Add Member
+												</a>
+											</li>
+
+											<li>
+												<a href="<?php echo site_url();?>site/show_members">
+													 Show Members
+												</a>
+											</li>																						
+										</ul>
+									</li>
+									<li  class="nav-parent nav-expanded nav-active">
+										<a>
+											<span class="pull-right label label-primary"><?php echo $no_of_branches;?></span>
+											<i class="fa fa-plus-square" aria-hidden="true"></i>
+											<span>Branch Management</span>
+										</a>
+										<ul class="nav nav-children">
+											<li>
+												<a href="<?php echo site_url();?>site/show_branches">
+													 Show Branches
+												</a>
+											</li>
+
+											<li>
+												<a href="<?php echo site_url();?>site/add_branch">
+													 Add Branch
+												</a>
+											</li>																						
+										</ul>
+									</li>
+									<li class="nav-parent">
+										<a>				<span class="pull-right label label-primary"><?php echo $no_of_events;?></span>
+											<i class="fa fa-calendar" aria-hidden="true"></i>
+											<span>Event Management</span>
+										</a>
+										<ul class="nav nav-children">
+											<li>
+												<a href="<?php echo site_url();?>site/add_event">
+													 Add Event
+												</a>
+											</li>
+
+											<li>
+												<a href="<?php echo site_url();?>site/show_events">
+													 Show Events
+												</a>
+											</li>																						
+										</ul>
+									</li>
+									<?php }?>
+                                    <?php if ($title == 'Add Event' || $title == 'Show Branches' || $title == 'Update Branch') {?>
+									<li>
+										<a href="<?php echo site_url();?>site/dashboard">
+											<i class="fa fa-home" aria-hidden="true"></i>
+											<span>Dashboard</span>
+										</a>
+									</li>
+									<li class="nav-parent">
+										<a>
+											<i class="fa fa-user" aria-hidden="true"></i>
+											<span>User Management</span>
+										</a>
+										<ul class="nav nav-children">
+											<li>
+												<a href="<?php echo site_url();?>site/add_member">
+													 Add Member
+												</a>
+											</li>
+
+											<li>
+												<a href="<?php echo site_url();?>site/show_members">
+													 Show Members
+												</a>
+											</li>																						
+										</ul>
+									</li>
+									<li  class="nav-parent nav-expanded nav-active">
+										<a>
+											<span class="pull-right label label-primary"><?php echo $no_of_branches;?></span>
+											<i class="fa fa-plus-square" aria-hidden="true"></i>
+											<span>Branch Management</span>
+										</a>
+										<ul class="nav nav-children">
+											<li>
+												<a href="<?php echo site_url();?>site/show_branches">
+													 Show Branches
+												</a>
+											</li>
+
+											<li>
+												<a href="<?php echo site_url();?>site/add_branch">
+													 Add Branch
+												</a>
+											</li>																						
+										</ul>
+									</li>
+									<li class="nav-parent">
+										<a>				<span class="pull-right label label-primary"><?php echo $no_of_events;?></span>
+											<i class="fa fa-calendar" aria-hidden="true"></i>
+											<span>Event Management</span>
+										</a>
+										<ul class="nav nav-children">
+											<li>
+												<a href="<?php echo site_url();?>site/add_event">
+													 Add Event
+												</a>
+											</li>
+
+											<li>
+												<a href="<?php echo site_url();?>site/show_events">
+													 Show Events
+												</a>
+											</li>																						
+										</ul>
+									</li>
+									<?php }?>
+								</ul>
+							</nav>
+
+						</div>
+				
+					</div>
+				
+				</aside>
+				<!-- end: sidebar -->
